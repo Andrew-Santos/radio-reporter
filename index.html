@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Painel · Rádio Repórter</title>
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="compartilhado/previa.css">
+</head>
+<body>
+  <div id="tela-carga" class="tela-centro"><p class="estado">Carregando…</p></div>
+
+  <main id="tela-login" class="tela-centro" hidden>
+    <form id="form-login" class="login-caixa" autocomplete="off">
+      <h1 class="marca-nome">Painel</h1>
+      <p class="login-sub">Digite a senha para entrar.</p>
+      <label for="login-senha">Senha</label>
+      <input id="login-senha" class="campo" type="password" autocomplete="current-password" required>
+      <p id="login-erro" class="login-erro" role="alert" hidden></p>
+      <button id="login-botao" class="btn btn-primario" type="submit">Entrar</button>
+    </form>
+  </main>
+
+  <div id="painel" hidden>
+    <aside id="menu" class="menu" aria-label="Menu principal">
+      <div class="menu-topo">
+        <span class="menu-marca marca-nome">Painel</span>
+        <button id="btn-menu" class="menu-toggle" type="button" aria-label="Minimizar menu" aria-expanded="true">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+        </button>
+      </div>
+      <nav id="menu-itens" class="menu-itens"></nav>
+      <button id="btn-sair" class="menu-item menu-sair" type="button" title="Sair">
+        <span class="menu-icone"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></svg></span>
+        <span class="menu-rotulo">Sair</span>
+      </button>
+    </aside>
+    <section id="area" class="area" tabindex="-1"></section>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
