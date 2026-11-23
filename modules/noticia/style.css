@@ -1,0 +1,24 @@
+/* modules/noticia/style.css — prefixo nt- */
+.nt-pagina { display: flex; flex-direction: column; gap: 16px; max-width: 1200px; }
+.nt-pagina h1 { font-size: 1.5rem; font-weight: 700; }
+.nt-sub { margin: 0; color: var(--suave); }
+.nt-busca { display: flex; gap: 12px; align-items: flex-end; max-width: 760px; }
+.nt-busca .campo-grupo { flex: 1; }
+.nt-resultado { display: grid; grid-template-columns: minmax(300px, 420px) minmax(0, 1fr); gap: 32px; margin-top: 12px; align-items: start; }
+.nt-form { display: flex; flex-direction: column; gap: 18px; padding: 22px; border: 1px solid var(--borda); border-radius: 12px; background: #fff; }
+.nt-resultado .cartao-previas { padding: 22px; background: var(--fundo-suave); border-radius: 12px; max-width: none; }
+@media (max-width: 1000px) { .nt-resultado { grid-template-columns: 1fr; } }
+@media (max-width: 560px) { .nt-busca { flex-direction: column; align-items: stretch; } }
+
+/* barra de progresso do envio */
+.nt-progresso { display: flex; flex-direction: column; gap: 6px; }
+.nt-barra { height: 8px; border-radius: 999px; background: #e5e5e5; overflow: hidden; }
+.nt-barra-cheia { height: 100%; width: 0; background: #171717; border-radius: 999px; transition: width .25s ease; }
+.nt-progresso-texto { font-size: .85rem; color: var(--suave); }
+
+/* modal de envio concluído */
+.nt-modal { border: 0; border-radius: 14px; padding: 28px; width: min(420px, calc(100% - 32px)); box-shadow: 0 20px 60px rgba(0,0,0,.25); color: var(--texto); }
+.nt-modal::backdrop { background: rgba(0,0,0,.5); }
+.nt-modal h2 { font-size: 1.25rem; margin-bottom: 8px; }
+.nt-modal-texto { margin: 0 0 22px; color: var(--suave); }
+.nt-modal-acoes { display: flex; gap: 10px; justify-content: flex-end; flex-wrap: wrap; }

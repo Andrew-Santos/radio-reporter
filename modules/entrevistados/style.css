@@ -1,0 +1,4 @@
+/* modules/entrevistados/style.css — prefixo en- */
+.en-pagina { display: flex; flex-direction: column; gap: 16px; max-width: 1200px; }
+.en-vazio { margin-top: 8px; padding: 40px 24px; border: 1px dashed #d4d4d4; border-radius: 12px; text-align: center; }
+.en-vazio-titulo { margin: 0 0 6px; font-weight: 600; }

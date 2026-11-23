@@ -1,0 +1,12 @@
+/* modules/agendadas/style.css — prefixo ag- */
+.ag-pagina { max-width: 1200px; display: flex; flex-direction: column; gap: 18px; }
+.ag-pagina h1 { font-size: 1.5rem; font-weight: 700; }
+.ag-topo { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.ag-grade { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 22px; align-items: start; }
+.ag-bloco { display: flex; flex-direction: column; border: 1px solid var(--borda); border-radius: 14px; background: #fff; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,.06); }
+.ag-midia { display: block; width: 100%; height: auto; background: #111; }
+.ag-midia-vazia { aspect-ratio: 3 / 4; display: grid; place-items: center; color: var(--suave); background: var(--fundo-suave); }
+.ag-legenda { margin: 0; padding: 16px; white-space: pre-wrap; overflow-wrap: anywhere; font-size: .9rem; line-height: 1.5; }
+.ag-vazio { grid-column: 1 / -1; margin-top: 16px; padding: 40px 24px; border: 1px dashed #d4d4d4; border-radius: 12px; text-align: center; }
+.ag-vazio-titulo { margin: 0 0 6px; font-weight: 600; }
+@media (max-width: 560px) { .ag-grade { grid-template-columns: 1fr; } }

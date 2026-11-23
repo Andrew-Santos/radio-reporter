@@ -1,0 +1,19 @@
+/* modules/portal/style.css — prefixo pt- */
+.pt-pagina { max-width: 980px; display: flex; flex-direction: column; gap: 14px; }
+.pt-pagina h1 { font-size: 1.5rem; font-weight: 700; }
+.pt-topo { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.pt-sub { margin: 0; color: var(--suave); }
+.pt-filtro { display: flex; align-items: center; gap: 8px; font-weight: 500; cursor: pointer; width: fit-content; }
+.pt-lista { display: flex; flex-direction: column; gap: 10px; }
+.pt-linha { display: flex; justify-content: space-between; align-items: center; gap: 18px; padding: 14px 18px; border: 1px solid var(--borda); border-radius: 12px; background: #fff; }
+.pt-postada { background: var(--fundo-suave); }
+.pt-postada .pt-titulo { color: var(--suave); }
+.pt-info { min-width: 0; }
+.pt-titulo { margin: 0 0 4px; font-weight: 600; line-height: 1.35; overflow-wrap: anywhere; }
+.pt-meta { margin: 0; color: var(--suave); font-size: .85rem; }
+.pt-acoes { display: flex; align-items: center; gap: 14px; flex-shrink: 0; }
+.pt-abrir { color: var(--suave); font-size: .88rem; }
+.pt-selo { padding: 6px 12px; border: 1px solid var(--borda); border-radius: 999px; background: #fff; font-size: .85rem; font-weight: 600; color: var(--suave); white-space: nowrap; }
+.pt-vazio { padding: 40px 24px; border: 1px dashed #d4d4d4; border-radius: 12px; text-align: center; }
+.pt-vazio-titulo { margin: 0; font-weight: 600; }
+@media (max-width: 640px) { .pt-linha { flex-direction: column; align-items: stretch; } .pt-acoes { justify-content: space-between; } }
